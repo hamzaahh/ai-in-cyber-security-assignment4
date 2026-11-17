@@ -4,24 +4,6 @@
 
 A small Decision Tree that flags suspicious login activity, then makes the result **explainable** (confidence, feature importance, sensitivity test) and **privacy-aware** (masked IPs and account IDs) before producing a **responsible alert**: severity, reason, recommended action and human-review status.
 
-> ⚠️ Educational project. All records are sanitized, fictional samples. No live system is tested and no account is ever blocked automatically.
-
-## Project structure
-
-```
-.
-├── data/login_activity.csv                 # 38 labelled records (Normal / Suspicious) to train the tree
-├── notebooks/Lab4_Explainable_Privacy_Aware_Alert.ipynb   # executed notebook (Q1–Q5)
-├── src/lab4_alert.py                       # same logic as a standalone script
-├── results/
-│   ├── Lab4_Final_Alerts.csv               # final alert table (masked identifiers only)
-│   └── feature_importance.png              # Q2 chart
-├── docs/lab_report.md                      # lab-file write-up, notes, conclusion, viva Q&A
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
-
 ## What each task does
 
 | Task | What it shows |
